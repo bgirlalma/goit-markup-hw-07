@@ -14,8 +14,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700&display=swap"
         rel="stylesheet">
-        <link rel="stylesheet" href="./main.css/styles.css">
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/tablet.css">
+    <link rel="stylesheet" href="./css/desktop.css">
 </head>
 
 <body>
@@ -25,7 +26,11 @@
 <div class="container">
 <nav class="header-nav">
     <a href="./index.html" class="logo">Web<span class="logo-white">Studio</span></a>
-    <ul class="header-title">
+
+    <svg class="header-burger" width="32" height="22">
+        <use href="./images/icon.svg/sprite-icon.svg#icon-burger"></use>
+    </svg>
+    <!-- <ul class="header-title">
         <li class="item">
             <a class="header-link active-link" href="./index.html">Studio</a>
         </li>
@@ -35,10 +40,10 @@
         <li class="item">
             <a class="header-link" href="">Contacts</a>
         </li>
-    </ul>
+    </ul> -->
 </nav>
 
-<address class="header-contacts">
+<!-- <address class="header-contacts">
     <ul class="contacts">
         <li class="item">
             <a class="contacts-active_mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
@@ -47,15 +52,15 @@
             <a class="contacts-active_tel" href="tel:+110001111111">+11 (000) 111-11-11</a>
         </li>
     </ul>
-</address>
+</address> -->
 
 </div>
-</header>
+</header> 
 <!-- Header end -->
 
 <!-- Section Hero start -->
 <main>
-<section class="hero-section">
+ <section class="hero-section">
 <div class="container">
     <h1 class="hero-title">
         Effective Solutions for Your Business
@@ -156,7 +161,7 @@
     </h2>
 
     <ul class="team-wrapper">
-    <li class="team-cards">
+    <li class="team-cards cards">
 
      <img class="team-image" src="./images/Mark.jpg" width="264" alt="Mark">
      <div class="card">
@@ -198,7 +203,7 @@
         </li>
 </div>
 </li>
-        <li class="team-cards">
+        <li class="team-cards cards">
             <img class="team-image" src="./images/Tom.jpg" width="264" alt="Tom">
     <div class="card">
             <h3 class="team-name">
@@ -239,7 +244,7 @@
                 </li>
         </li>
     </div>
-        <li class="team-cards">
+        <li class="team-cards cards">
             <img class="team-image" src="./images/Camila.jpg" width="264" alt="Camila">
     <div class="card">
             <h3 class="team-name">
@@ -280,7 +285,7 @@
                 </li>
         </li>
     </div>
-        <li class="team-cards">
+        <li class="team-cards cards">
             <img class="team-image" src="./images/Daniel.jpg" width="264" alt="Daniel">
     <div class="card">
             <h3 class="team-name">
