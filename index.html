@@ -26,19 +26,20 @@
 <div class="container">
 <nav class="header-nav">
     <a href="./index.html" class="logo">Web<span class="logo-white">Studio</span></a>
-<button type="button" class="burger-type-open" aria-expanded="false">
-<svg class="burder-open is-open" width="32" height="22" aria-label="переключатель меню">
-    <use href="./images/icon.svg/sprite-icon.svg#icon-open-burger"></use>
-</svg>
-</button>
-        <div class="modal-burger">
-            <button type="button" class="burger-close">
-    <svg class="burger-svg" width="8" height="8">
-        <use href="./images/icon.svg/sprite-icon.svg#icon-close"></use>
-    </svg>
+    <div class="menu-open is-open">
+    <button type="button" class="burger-type-open" >
+        <svg class="burder-open" width="32" height="22" aria-label="переключатель меню" js-open-menu>
+            <use class="svg-open" href="./images/icon.svg/sprite-icon.svg#icon-icon-menu"></use>
+        </svg>
+        <svg class="burger-close" width="8" height="8" js-close-menu>
+            <use class="svg-close" href="./images/icon.svg/sprite-icon.svg#icon-close"></use>
+        </svg>
             </button>
         </div>
-    <!-- <ul class="header-title">
+
+        <div class="burger-menu-open js-menu-container" js-menu-container>
+            <div class="navigation">
+                <!-- <ul class="header-title">
         <li class="item">
             <a class="header-link active-link" href="./index.html">Studio</a>
         </li>
@@ -49,9 +50,9 @@
             <a class="header-link" href="">Contacts</a>
         </li>
     </ul> -->
-</nav>
+            </div>
 
-<!-- <address class="header-contacts">
+        <!-- <address class="header-contacts">
     <ul class="contacts">
         <li class="item">
             <a class="contacts-active_mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
@@ -61,7 +62,8 @@
         </li>
     </ul>
 </address> -->
-
+        </div>
+</nav>
 </div>
 </header> 
 <!-- Header end -->
