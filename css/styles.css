@@ -40,11 +40,6 @@ a{
     --customers-color: #8E8F99;
 }
 @media screen and (min-width: 428px) {
-    
-
-.header{
-   
-}
 
 .strip{
     box-sizing: border-box;
@@ -54,6 +49,8 @@ a{
 
 .container{
     max-width: 428px;
+    margin: 0;
+    padding: 0;
 }
 
 .header .container{
@@ -89,7 +86,9 @@ a{
     color: var(--main-color);
 }
 
-
+.burder-open{
+    fill: rgba(46, 47, 66, 1);
+}
 
 .header-title{
     display: flex;
@@ -409,16 +408,16 @@ a{
 
 .customers-section {
     width: 100%;
-    padding: 96px 16px;
- 
+    padding: 86px 16px 96px 16px;
 }
 
 .customers {
     list-style: none;
-   
-    margin-top: 72px;
+    display: flex;
+    flex-wrap: wrap;
     padding-left: 0;
-    
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .customers-title{
@@ -435,6 +434,9 @@ a{
 .customers-list {
     width: 190px;
     height: 88px;
+    width: calc((100% - 2 * 16px) /2);
+    margin: 8px;
+    margin-top: 72px;
 }
 
 .customers-link{

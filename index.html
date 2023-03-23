@@ -26,10 +26,18 @@
 <div class="container">
 <nav class="header-nav">
     <a href="./index.html" class="logo">Web<span class="logo-white">Studio</span></a>
-
-    <svg class="header-burger" width="32" height="22">
-        <use href="./images/icon.svg/sprite-icon.svg#icon-burger"></use>
+<button type="button" class="burger-type-open" aria-expanded="false">
+<svg class="burder-open is-open" width="32" height="22" aria-label="переключатель меню">
+    <use href="./images/icon.svg/sprite-icon.svg#icon-open-burger"></use>
+</svg>
+</button>
+        <div class="modal-burger">
+            <button type="button" class="burger-close">
+    <svg class="burger-svg" width="8" height="8">
+        <use href="./images/icon.svg/sprite-icon.svg#icon-close"></use>
     </svg>
+            </button>
+        </div>
     <!-- <ul class="header-title">
         <li class="item">
             <a class="header-link active-link" href="./index.html">Studio</a>
