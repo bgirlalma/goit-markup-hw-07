@@ -39,19 +39,27 @@ a{
     --type-color: #4D5AE5;
     --customers-color: #8E8F99;
 }
+
+.container{
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+} 
+
 @media screen and (min-width: 428px) {
 
+.container{
+    max-width: 428px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
 
 .strip{
     box-sizing: border-box;
     background: #FFFFFF;
     border-bottom: 1px solid #E7E9FC;
-}
-
-.container{
-    max-width: 428px;
-    margin: 0;
-    padding: 0;
 }
 
 .header .container{
@@ -291,18 +299,23 @@ a{
     padding: 96px 16px;
 }
 
+.advantages.container{
+    padding-left: 0;
+    padding-right: 0;
+}
+
 .advantages-title{
    display: none;
 }
 
 .advantages-wrapper{
-    
     padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .advantages-block {
     list-style: none;
-
 }
 
 .advantages-icon {
@@ -449,6 +462,11 @@ a{
     padding: 86px 16px 96px 16px;
 }
 
+.customers-section.container{
+    padding-left: 0;
+    padding-right: 0;
+}
+
 .customers {
     list-style: none;
     display: flex;
@@ -481,7 +499,7 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 16px 32px;
+    padding: 16px 40px;
     border: 1px solid var(--customers-color);
     border-radius: 4px;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -924,8 +942,13 @@ a{
 
 /* portfolio section start */
 .portfolio{
-    padding-top: 96px;
-    padding-bottom: 120px;
+    width: 100%;
+    padding: 48px 0;
+}
+
+.portfolio.container{
+    margin-left: 0;
+    margin-right: 0;
 }
 
 .portfolio-title{
@@ -933,27 +956,24 @@ a{
 }
 
 .type-list{
-    gap: 24px;
-    margin-top: 0;
-    margin-bottom: 77px;
     padding-left: 0;
-    list-style: none;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-wrap: wrap;
+    list-style: none;
 }
+
 
 .item-type{
-
+    width: calc(( 100% - 3 * 24px) /3);
+    gap: 24px;
+    
 }
-
 .portfolio-button{
-   
     cursor: pointer;
     background: #F4F4FD;
     border: 1px solid #E7E9FC;
     border-radius: 4px;
-    padding: 12px 24px;
+    padding: 8px 16px;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     font-weight: 500;
@@ -975,11 +995,7 @@ a{
     margin-top: 0;
     padding-left: 0;
     padding-right: 0;
-    
-    display: flex;
-    flex-wrap: wrap;
-    gap: 48px;
-    column-gap: 24px;
+    max-width: 396px;
 }
 
 .cards-wrapper:last-child{
@@ -987,7 +1003,12 @@ a{
 }
 
 .cards-menu{
-    list-style: none;   
+    list-style: none;
+    margin-bottom: 48px;   
+}
+
+.cards-menu:last-child{
+    margin-bottom: 0;
 }
 
 .cards-menu:hover, .cards-menu:focus{
@@ -1005,7 +1026,7 @@ a{
 
 .card-img{
     display: block;
-    max-width: 100%;
+    width: 100%;
     height: auto;
     background: linear-gradient(0deg, rgba(77, 90, 229, 0.1), rgba(77, 90, 229, 0.1)), url(4074365.jpg);
     background-blend-mode: soft-light, normal;
