@@ -54,6 +54,8 @@ a{
     max-width: 428px;
     padding-left: 16px;
     padding-right: 16px;
+    margin-left: 0;
+    margin-right: 0;
 }
 
 .strip{
@@ -64,10 +66,8 @@ a{
 
 .header .container{
     display: flex;
-    padding: 24px 15px 0 15px;
-    margin-top: 0;
-    margin-bottom: 0;
-    
+    padding: 24px 16px 0 16px;
+    margin: 0;  
 }
 
 .header-nav{
@@ -520,13 +520,8 @@ a{
 
 /* Footer start */
 .footer{ 
-    max-width: 428px;
     background-color: var(--main-color);
     padding: 96px 0;
-}
-
-.footer .container{
-    
 }
 
 .footer-wrapper{
@@ -547,7 +542,8 @@ a{
  
     text-decoration: none;
     display: flex;
-    align-items: center;
+    justify-content: center;
+    
     letter-spacing: 0.03em;
     text-transform: uppercase;
     margin-bottom: 15px;
@@ -570,10 +566,7 @@ a{
 }
 
 .wrapper{
-    max-width: 208px;
     margin-bottom: 72px;
-    margin-left: 110px;
-    margin-right: 110px;
 }
 .footer-title {
     display: flex;
@@ -719,13 +712,14 @@ a{
 
 .modal {
     position: absolute;
-    min-width: 408px;
-    min-height: 576px;
-    padding-left: 26px;
-    padding-right: 22px;
-    top: 50%;
+    width: 392px;
+    min-height: 586px;
+    padding-left: 16px;
+    padding-right: 16px;
+    
+    /* top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); */
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     background-color: #FCFCFC;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -956,16 +950,19 @@ a{
 }
 
 .type-list{
+    padding: 48px 0;
+    margin-top: 0;
+    margin-bottom: 0;
     padding-left: 0;
     display: flex;
     flex-wrap: wrap;
+    gap: 24px;
     list-style: none;
+   
 }
 
 
 .item-type{
-    width: calc(( 100% - 3 * 24px) /3);
-    gap: 24px;
     
 }
 .portfolio-button{
@@ -973,7 +970,7 @@ a{
     background: #F4F4FD;
     border: 1px solid #E7E9FC;
     border-radius: 4px;
-    padding: 8px 16px;
+    padding: 12px 24px;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     font-weight: 500;
