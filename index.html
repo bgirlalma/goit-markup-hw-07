@@ -24,21 +24,23 @@
     <!-- Header start -->
 <header class="header strip">
 <div class="container">
-<nav class="header-nav">
-    <a href="./index.html" class="logo">Web<span class="logo-white">Studio</span></a>
-    <div class="menu-open is-open">
-    <button type="button" class="burger-type-open" >
-        <svg class="burder-open" width="32" height="22" aria-label="переключатель меню" js-open-menu>
-            <use class="svg-open" href="./images/icon.svg/sprite-icon.svg#icon-icon-menu"></use>
-        </svg>
+    <div class="header-nav-menu">
+<a href="./index.html" class="logo">Web<span class="logo-white">Studio</span></a>
+<button type="button" class="burger-type-open" js-open-menu>
+    <svg class="burder-open" width="32" height="22" aria-label="переключатель меню" js-open-menu>
+        <use class="svg-open" href="./images/icon.svg/sprite-icon.svg#icon-icon-menu"></use>
+    </svg>
+    </button>
+</div>
+
+    <div class="menu-open is-hidden" js-menu-container>
+        <div class="header-nav">
+        <button type="button" class="burger-type-close" js-close-menu>
         <svg class="burger-close" width="8" height="8" js-close-menu>
             <use class="svg-close" href="./images/icon.svg/sprite-icon.svg#icon-close"></use>
         </svg>
             </button>
-        </div>
-
-        <div class="burger-menu-open js-menu-container" js-menu-container>
-            <div class="navigation">
+        
                 <ul class="header-title">
         <li class="item">
             <a class="header-link active-link" href="./index.html">Studio</a>
@@ -50,9 +52,9 @@
             <a class="header-link" href="">Contacts</a>
         </li>
     </ul>
-            </div>
+           
 
-        <!-- <address class="header-contacts">
+        <address class="header-contacts">
     <ul class="contacts">
         <li class="item">
             <a class="contacts-active_mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
@@ -61,7 +63,40 @@
             <a class="contacts-active_tel" href="tel:+110001111111">+11 (000) 111-11-11</a>
         </li>
     </ul>
-</address> -->
+<!-- One svg -->
+    <ul class="menu-icon">
+        <li class="menu-icon-card">
+            <a href="" class="menu-icon-link">
+                <svg class="menu-icon-list" width="16" height="16">
+                    <use href="./images/icon.svg/sprite-icon.svg#icon-instagram"></use>
+                </svg>
+            </a>
+        </li>
+<!-- two svg -->
+        <li class="menu-icon-card">
+            <a href="" class="menu-icon-link">
+                <svg class="menu-icon-list" width="16" height="16">
+                    <use href="./images/icon.svg/sprite-icon.svg#icon-twitter"></use>
+                </svg>
+            </a>
+        </li>
+<!-- three svg -->
+        <li class="menu-icon-card">
+            <a href="" class="menu-icon-link">
+                <svg class="menu-icon-list" width="16" height="16">
+                    <use href="./images/icon.svg/sprite-icon.svg#icon-facebook"></use>
+                </svg>
+            </a>
+        </li>
+<!-- four svg -->
+        <li class="menu-icon-card">
+            <a href="" class="menu-icon-link">
+                <svg class="menu-icon-list" width="16" height="16">
+                    <use href="./images/icon.svg/sprite-icon.svg#icon-linkedin"></use>
+                </svg>
+            </a>
+        </li>
+</address>
         </div>
 </nav>
 </div>
@@ -543,6 +578,7 @@
 
 <!-- Script -->
 <script src="./js/modal.js"></script>
+<script src="./js/mobil-menu.js"></script>
 </body>
 
 </html>
