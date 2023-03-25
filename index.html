@@ -23,25 +23,25 @@
 
     <!-- Header start -->
 <header class="header strip">
-<div class="container">
-    <div class="header-nav-menu">
+            <div class="container">
+    <nav class="header-nav-menu">
 <a href="./index.html" class="logo">Web<span class="logo-white">Studio</span></a>
-<button type="button" class="burger-type-open" js-open-menu>
-    <svg class="burder-open" width="32" height="22" aria-label="переключатель меню" js-open-menu>
+<button type="button" class="js-open-menu is-open"  aria-expanded="false"
+aria-controls="mobile-menu">
+    <svg class="burder-open" width="32" height="22" aria-label="переключатель меню">
         <use class="svg-open" href="./images/icon.svg/sprite-icon.svg#icon-icon-menu"></use>
     </svg>
     </button>
-</div>
 
-    <div class="menu-open is-hidden" js-menu-container>
-        <div class="header-nav">
-        <button type="button" class="burger-type-close" js-close-menu>
-        <svg class="burger-close" width="8" height="8" js-close-menu>
+
+    <div class="menu-open js-menu-container" id="mobile-menu">
+        <button type="button" class="burger-type-close js-close-menu">
+        <svg class="burger-close" width="8" height="8">
             <use class="svg-close" href="./images/icon.svg/sprite-icon.svg#icon-close"></use>
         </svg>
             </button>
         
-                <ul class="header-title">
+                <ul class="mobile-menu">
         <li class="item">
             <a class="header-link active-link" href="./index.html">Studio</a>
         </li>
@@ -97,9 +97,9 @@
             </a>
         </li>
 </address>
-        </div>
-</nav>
-</div>
+    </div>
+        </nav>
+                </div>
 </header> 
 <!-- Header end -->
 
@@ -578,7 +578,7 @@
 
 <!-- Script -->
 <script src="./js/modal.js"></script>
-<script src="./js/mobil-menu.js"></script>
+<script defer src="./js/mobil-menu.js"></script>
 </body>
 
 </html>

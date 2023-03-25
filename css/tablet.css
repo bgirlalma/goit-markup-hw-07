@@ -1,21 +1,43 @@
 @media screen and (min-width: 768px) {
     .conteiner{
         max-width: 768px;
+        position: relative;
+        padding-right: 0;
+        margin-left: 0;
+        margin-right: 0;
     }
 
-    .header-title{
+    .header .container{
+        position: unset;
+        padding-right: 0;
+    }
+
+    .header-nav-menu{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 0;
+    }
+
+    .logo{
+        padding-bottom: 24px;
+    }
+
+    .mobile-menu{
         display: flex;
         list-style: none;
         margin-top: 0;
         margin-bottom: 0;
     }
 
-    .header-title .item + .item {
+    .mobile-menu .item + .item {
         margin-left: 40px;
+        
     }
     
-    .header-title:not(:first-child){
+    .mobile-menu:not(:first-child){
         padding-left: 0;
+        margin-left: 120px;
     }
     
     .header-link{
@@ -41,26 +63,41 @@
         bottom: 0;
     }
 
+    .menu-open{
+       position: static;
+       width: unset;
+       height: unset;
+       background-color: transparent;
+       flex-direction: unset;
+       transform: unset;
+       padding-left: 0;
+       padding-right: 0;
+       padding-top: 0;
+       display: flex;
+
+    }
+
     .header-contacts{
-        display: flex;
-        margin-right: 0;
+        position: absolute;
+        right: 0;
+        margin-right: 16px;
         margin-left: 0;
     }
 
     .contacts{
-        list-style: none;
-        display: flex;
-        padding-left: 0;
-        margin-top: 0;
-        margin-bottom: 0;
+        list-style: none; 
     }
 
     .contacts .item + .item {
-        margin-left: 40px;
+        margin-top: 4px;
     }
     
     .contacts:not(:first-child){
         margin-left: 0;
+    }
+
+    .item{
+        margin-bottom: 0;
     }
 
     .header-link{
@@ -89,7 +126,7 @@
         font-family: 'Roboto';
         font-style: normal;
         font-weight: 400;
-        font-size: 16px;
+        font-size: 12px;
         line-height: 1.5;
         letter-spacing: 0.02em;
         color: var(--secondary-color); 
@@ -101,7 +138,7 @@
         font-family: 'Roboto';
         font-style: normal;
         font-weight: 400;
-        font-size: 16px;
+        font-size: 12px;
         line-height: 1.5;
         letter-spacing: 0.02em;
         color: var(--secondary-color); 
@@ -115,5 +152,18 @@
     
     .contacts-active_tel:hover, .contacts-active_tel:focus{
         color: #363cbb;
+    }
+
+    /* burger none */
+    .js-open-menu{
+        display: none;
+    }
+
+    .burger-type-close{
+        display: none;
+    }
+
+    .menu-icon{
+        display: none;
     }
 }
