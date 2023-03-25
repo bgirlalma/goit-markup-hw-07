@@ -117,9 +117,11 @@ a{
 }
 
 .menu-open.is-hidden{
-    opacity: 0;
+    
 }
 .header-nav{
+    display: flex;
+    flex-direction: column;
     position: absolute;
     width: 428px;
     min-height: 796px;
@@ -184,7 +186,7 @@ a{
 }
 
 .header-contacts{
-
+    margin-top: auto;
 }
 
 .contacts{
