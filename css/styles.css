@@ -48,10 +48,38 @@ a{
     margin-right: auto;
 } 
 
-@media screen and (min-width: 428px) {
+@media screen and (max-width: 767px) {
+
+    .menu-open{
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-top: 80px;
+        background-color: #FCFCFC;
+        display: none;
+    }
+
+    .menu-open.is-open{
+        display: none;
+    }
+
+    .header-nav-menu{
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 24px;
+    }
+}
+
+@media screen and (min-width: 480px) {
 
 .container{
-    max-width: 428px;
+    width: 428px;
     margin-left: 0;
     margin-right: 0;
 }
@@ -63,18 +91,11 @@ a{
 }
 
 .header .container{
-    position: relative;
-    display: flex;
     padding: 24px 16px 0 16px;
     margin: 0;  
 }
 
-.header-nav-menu{
-    padding-bottom: 24px;
-}
-
 .logo{
-    display: flex;
     font-family: var(--secondary-font);
     font-weight: 800;
     font-size: 18px;
@@ -98,9 +119,7 @@ a{
 /* Burger start */
 
 .burger-type-open{
-    position: absolute;
-    top: 24px;
-    right: 16px;
+    display: inline-block;
     border: none;
     background-color: #FFFFFF;
     fill: var(--main-color);
