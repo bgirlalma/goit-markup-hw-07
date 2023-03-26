@@ -51,7 +51,7 @@ a{
 @media screen and (min-width: 428px) {
 
 .container{
-    max-width: 427px;
+    max-width: 428px;
     margin-left: 0;
     margin-right: 0;
 }
@@ -97,7 +97,7 @@ a{
 
 /* Burger start */
 
-.js-open-menu{
+.burger-type-open{
     position: absolute;
     top: 24px;
     right: 16px;
@@ -120,15 +120,6 @@ a{
     padding-right: 40px;
     padding-top: 80px;
     background-color: #FCFCFC;
-    transform: translate(100%);
-}
-
-.menu-open.js-open-menu{
-    transform: translate(0);
-}
-
-.js-open-menu.is-open{
-    
 }
 
 .burger-type-close{

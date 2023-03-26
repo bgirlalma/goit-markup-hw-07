@@ -5,6 +5,7 @@
         padding-right: 0;
         margin-left: 0;
         margin-right: 0;
+        
     }
 
     .header .container{
@@ -152,6 +153,50 @@
     
     .contacts-active_tel:hover, .contacts-active_tel:focus{
         color: #363cbb;
+    }
+
+    .hero-section{
+        padding-top: 112px;
+        padding-bottom: 108px;
+        text-align: center;
+        background-color: var(--main-color);
+        width: 100%;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), 
+        rgba(46, 47, 66, 0.7)), url(../images/hero.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    } 
+
+    .hero-title{
+        margin-left: 136px;
+        margin-right: 0;
+        min-width: 496px;
+        font-weight: 700;
+        font-size: 56px;
+        line-height: 1.1;
+        letter-spacing: 0.02em;
+        
+        color: #FFFFFF;
+    }
+
+    .hero-tapy{
+       
+    }
+
+    .advantages{
+        width: 100%;
+        padding: 96px 16px;
+    }
+
+    .advantages-wrapper{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .advantages-icon {
+        width: calc((100% - 2 * 16px) /2);
+       
     }
 
     /* burger none */
