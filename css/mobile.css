@@ -1,0 +1,20 @@
+
+@media screen and(min-width: 480px) {
+    .container{
+        min-width: 428;
+        
+    }
+    .menu-open{
+        min-width: 428px;
+    }
+
+    .header-link{
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.1;
+        text-decoration: none;
+        color: var(--main-color);
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+}
