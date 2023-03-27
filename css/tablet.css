@@ -21,6 +21,8 @@
     }
 
     .logo{
+        display: flex;
+        justify-content: flex-start;
         padding-bottom: 24px;
     }
 
