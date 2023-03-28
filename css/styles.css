@@ -1113,9 +1113,14 @@ li{
         fill: currentColor;
     }
 
+    .wrapper-container{
+       /* display: flex;
+        flex-direction: column; */
+        margin-top: auto;
+    }
+
     .wrapper-mobile{
-        display: flex;
-        flex-direction: column;
+         
     }
 
     .wrapper-mobile .item + .item {
@@ -1150,7 +1155,8 @@ li{
         margin-top: auto;
     }
     .contacts{
-        display: block; 
+        display: flex; 
+        flex-direction: column;
     }
 
     .item{
