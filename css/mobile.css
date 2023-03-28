@@ -1,11 +1,14 @@
 
 @media screen and(min-width: 480px) {
     .container{
-        width: 428;
-        
+        width: 428;  
     }
     .menu-open{
         min-width: 428px;
+    }
+
+    .header .container {
+        display: none;
     }
 
     .header-link{
