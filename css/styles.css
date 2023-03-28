@@ -58,10 +58,6 @@ li{
    
 }
 
-.header{
-    width: auto;
-}
-
 .header .container{
     display: flex;
     padding: 24px 15px 0 15px;
@@ -144,7 +140,7 @@ li{
     margin-left: 0;
 }
 
-.contacts{
+.contacts-tablet{
     list-style: none;
     display: flex;
     padding-left: 0;
@@ -152,11 +148,11 @@ li{
     margin-bottom: 0;
 }
 
-.contacts .item + .item {
+.contacts-tablet .item + .item {
     margin-left: 40px;
 }
 
-.contacts:not(:first-child){
+.contacts-tablet:not(:first-child){
     margin-left: 0;
 }
 
@@ -1042,17 +1038,6 @@ li{
     color: var(--secondary-color);
     margin-bottom: 30px;
 }
-
-@media screen and (max-width: 427px) {
-    .container{
-        min-width: 320px;
-    }
-
-    .header .container{
-        display: block;
-    }
-}
-
 @media screen and (min-width: 320px) and (max-width: 767px) {
     .container{
       min-width: 320px;
@@ -1109,6 +1094,7 @@ li{
         padding-bottom: 40px;
         padding-left: 40px;
         display: flex;
+        justify-content: space-between;
         flex-direction: column;
         overflow-y: hidden;
         background-color: #FCFCFC;
@@ -1160,18 +1146,13 @@ li{
         line-height: 1.1;
     }
 
-    .contacts{
+    .contacts-tablet{
         display: flex; 
         flex-direction: column;
-        margin-top: auto;
     }
 
     .email-item{
-        
-    }
-
-    .tel-item{
-       
+        margin-top: 40px;
     }
 
     .item{
@@ -1180,13 +1161,13 @@ li{
     
     .contacts-active_mail{
         font-weight: 600;
-        font-size: 36px;
+        font-size: 16px;
         line-height: 1.1;
     }
     
     .contacts-active_tel{
         font-weight: 400;
-        font-size: 16px;
+        font-size: 36px;
         line-height: 1.5;  
     }
     

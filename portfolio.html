@@ -17,49 +17,75 @@
 <body>
 
       <!-- Header start -->
+ <!-- Header start -->
 <header class="header strip">
 <div class="container">
 <nav class="header-nav-menu">
 <a href="./index.html" class="logo">Web<span class="logo-white">Studio</span></a>
-<button type="button" class="burger-type-open js-open-menu" aria-expanded="false"
-aria-controls="mobile-menu">
-<svg class="burder-open" width="32" height="22" aria-label="переключатель меню">
+
+<ul class="wrapper-mobile tablet">
+<li class="item header-item">
+<a class="header-link active-link active-studio" href="./index.html">Studio</a>
+</li>
+<li class="item header-item">
+<a class="header-link active-studio" href="./portfolio.html">Portfolio</a>
+</li>
+<li class="item header-item">
+<a class="header-link" href="">Contacts</a>
+</li>
+</ul>
+    
+<button type="button" class="burger-type-open" data-mobile-menu-open>
+<svg class="burger-open" width="32" height="22" aria-label="переключатель меню">
 <use class="svg-open" href="./images/icon.svg/sprite-icon.svg#icon-icon-menu"></use>
 </svg>
 </button>
 </nav>
-<!-- Nav end -->
+
+<address class="header-contacts">
+<ul class="contacts-tablet">
+<li class="item address-item">
+<a class="contacts-active_mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
+</li>
+<li class="item address-item">
+<a class="contacts-active_tel" href="tel:+110001111111">+11 (000) 111-11-11</a>
+</li>
+</ul>
+</address>
 
 <!-- Burger menu start -->
-<div class="menu-open js-menu-container">
-<button type="button" class="burger-type-close js-close-menu">
+<div class=" backdrop is-hidden" data-mobile-menu>
+<div class="mobile-menu menu-position">
+<button type="button" class="burger-type-close" data-mobile-menu-close>
 <svg class="burger-close" width="8" height="8">
 <use class="svg-close" href="./images/icon.svg/sprite-icon.svg#icon-close"></use>
 </svg>
 </button>
 
-<ul class="mobile-menu">
-<li class="item">
+<nav>
+<ul class="wrapper-mobile">
+<li class="item mobile-item">
 <a class="header-link active-link" href="./index.html">Studio</a>
 </li>
-<li class="item">
+<li class="item mobile-item">
 <a class="header-link" href="./portfolio.html">Portfolio</a>
 </li>
-<li class="item">
-<a class="header-link" href="">Contacts</a>
+<li class="item mobile-item">
+<a class="header-link link-contacts" href="">Contacts</a>
+</li>
+</ul>
+</nav>
+
+<div>
+<ul class="contacts">
+<li class="item tel-item">
+<a class="contacts-active_tel mobile-contacts-tel" href="tel:+110001111111">+11 (000) 111-11-11</a>
+</li>
+<li class="item email-item">
+<a class="contacts-active_mail mobile-contacts-mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
 </li>
 </ul>
 
-<!-- Contacts -->
-<address class="header-contacts">
-<ul class="contacts">
-<li class="item">
-<a class="contacts-active_mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
-</li>
-<li class="item">
-<a class="contacts-active_tel" href="tel:+110001111111">+11 (000) 111-11-11</a>
-</li>
-</ul>
 <!-- One svg -->
 <ul class="menu-icon">
 <li class="menu-icon-card">
@@ -93,12 +119,13 @@ aria-controls="mobile-menu">
 </svg>
 </a>
 </li>
-</address>
+</ul>
 </div>
-<!-- Burger menu end -->
 </div>
-</header> 
-    <!-- Header end -->  
+</div>
+</div>
+</header>
+    <!-- Header end -->
  <main>
 <section class="portfolio container">
 <div class="container">
