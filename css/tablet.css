@@ -20,6 +20,7 @@
 
     .backdrop {
         position: unset;
+        display: none;
     }
 
     .is-hidden {
@@ -33,6 +34,7 @@
     }
 
     .mobile-menu{
+        display: none;
         position: unset;
         width: 0;
         height: 0;
@@ -50,32 +52,52 @@
     }
 
     /* Header start */
-    .header-nav-menu{
-        display: unset;
-        justify-content: unset;
-        align-items: unset;
+    .header .container{
+        display: flex;
+        padding: 24px 15px 0 15px;
+        margin-top: 0;
+        margin-bottom: 0;
     }
 
-    .header-link{
+    .wrapper-mobile .tablet{
+        display: flex;
+        justify-content: center;
+    }
+
+    .logo{
+        margin-right: 120px;
+    }
+
+    .wrapper-mobile{
+        display: none;
+    }
+
+    .contacts{
+        display: none;
+    }
+
+    .tablet{
+        display: flex;
+        justify-content: center;
+        margin-top: 0;
+        margin-left: 0;
+        margin-bottom: 0;
+    }
+
+    .header-link .active-studio{
         font-weight: 500;
         font-size: 16px;
         line-height: 1.1;
     }
 
     .contacts-tablet{
+       display: unset;
+        padding-left: 0;
         
     }
     
     .contacts-tablet .item + .item {
-        margin-left: 40px;
-    }
-
-    .email-item{
-        margin-top: 0;
-    }
-
-    .item{
-        margin-bottom:0;
+        margin-left: 0;
     }
 
     .contacts-active_mail{
@@ -89,4 +111,89 @@
         font-size: 12px;
         line-height: 1.5;  
     }
+
+/* Hero start */
+    .hero-section{
+        padding-top: 110px;
+        padding-bottom: 110px;
+        height: unset;
+    } 
+
+    .hero-tapy{
+        margin-top: 40px;
+    }
+
+    /* Advantages start */
+    .advantages{
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .advantages-wrapper{
+        width: 100%;
+        display: flex;
+       flex-wrap: wrap;
+    }
+
+    .advantages-block{
+        padding-right: 24px;
+        width: calc((100% - 2 * 12px) /2);
+    }
+
+    .block{
+        padding-right: 0;
+    }
+
+    .block-desc{
+        font-weight: 500;
+        margin-bottom: 72px;
+    }
+
+    .desc{
+        margin-bottom: 0;
+    }
+
+    .advantages-icon{
+        display: none;
+     }
+
+     /* Cases none */
+    .cases{
+        display: none;
+    }
+
+    /* Taem start */
+
+    .team{
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .team-wrapper{
+        margin-bottom: 0;
+        margin-top: 70px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .team-cards{
+        width: unset;
+        margin-bottom: 72px;
+    }
+
+    /* Customers start */
+    .customers-section {
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 100px;
+        padding-bottom: 100px;
+       
+    }
+
+    .customers {
+        justify-content: unset;
+        align-items: unset;
+        margin-top: 72px;
+    }
+
 }

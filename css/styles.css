@@ -1146,7 +1146,7 @@ li{
         line-height: 1.1;
     }
 
-    .contacts-tablet{
+    .contacts{
         display: flex; 
         flex-direction: column;
     }
@@ -1281,8 +1281,6 @@ li{
     
     .team-cards{
         margin-bottom: 72px;
-        margin-left: auto;
-        margin-right: 0;
     }
 
     .team-desc{
