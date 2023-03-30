@@ -702,10 +702,6 @@
     margin: 0;
 }
 
-.form-modal {
-
-}
-
 .modal-title {
     margin-top: 72px;
     margin-bottom: 19px;
@@ -729,9 +725,6 @@
     line-height: 1.3;
     letter-spacing: 0.04em;
     color: #8E8F99;
-}
-
-.form-modal-group{  
 }
 
 .input-wrapper{

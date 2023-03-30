@@ -133,7 +133,6 @@ li{
     bottom: 0;
 }
 
-
 .header-contacts{
     display: flex;
     margin-right: 0;
@@ -539,8 +538,6 @@ li{
     text-transform: uppercase;
     margin-bottom: 15px;
 }
-
-
 
 .logo-studio{
     color: #F4F4FD;
@@ -1063,7 +1060,7 @@ li{
         display: none;
     }
 
-    .backdrop {
+    .header-backdrop {
         position: fixed;
         z-index: 1;
         top: 0;
