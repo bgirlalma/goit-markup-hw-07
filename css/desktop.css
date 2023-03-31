@@ -1,7 +1,7 @@
 @media screen and (min-width: 1128px) {
     
     .container{
-       width: 1128;
+       width: 100%;
     }
 
     /* Mobile none */
@@ -120,7 +120,6 @@
     .hero-section{
         padding-top: 190px;
         padding-bottom: 190px;
-        max-width: 1440px;
         height: 600px;
     } 
 
@@ -140,22 +139,21 @@
         max-width: 1128px;
     }
 
-    /* Cases start */
-    .cases .container{
-        max-width: 1128px;
+    .cases-wrapper{
+        margin-left: auto;
+        margin-right:auto;
+        max-width: 1200px;
     }
 
-    /* Team start */
-    .team .container{
-        padding-left: 0;
-        padding-right: 0;
-        padding-bottom: 0;
-        max-width: 1128px;
+    .team-wrapper{
+        margin-left: auto;
+        margin-right:auto;
+        max-width: 1200px;
     }
 
+   
     /* Customers start */
     .customers-section .container{
-        max-width: 1128px;
         padding-left: 0;
         padding-right: 0;
     }

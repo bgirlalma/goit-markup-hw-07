@@ -1,16 +1,11 @@
 
-@media screen and (min-width: 428px) and (max-width: 767px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
     .container{
-        width: 100%;  
+        min-width: 429px;  
     }
 
     .header .container {
-        display: unset;
-    }
-
-    .header-nav-menu{
-        display: flex;
-        align-items: center;
+       padding-bottom: 24px;
     }
 
     .logo{
@@ -36,5 +31,9 @@
     
     .hero-tapy{
         margin-top: 72px;
+    }
+
+    .advantages{
+        
     }
 }

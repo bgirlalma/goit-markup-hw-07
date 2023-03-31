@@ -259,7 +259,6 @@ li{
 /* Advantages start */
 
 .advantages{
-    margin: 0;
     padding: 0;
     padding-top: 120px;
     padding-bottom: 120px;
@@ -1056,6 +1055,10 @@ li{
         justify-content: space-between;
     }
 
+    .logo{
+        margin-right: 0;
+    }
+
     .tablet, .header-contacts{
         display: none;
     }
@@ -1258,7 +1261,7 @@ li{
         margin-bottom: 72px;
     }
 
-    .block-desc.title{
+    .bottom{
         margin-bottom: 0;
     }
     
@@ -1269,8 +1272,8 @@ li{
 
     /* Team start */
     .team{
-        padding-top: 90px;
-        padding-bottom: 136px;
+        padding-top: 100px;
+        padding-bottom: 100px;
     }
 
     .team .container{
@@ -1288,8 +1291,13 @@ li{
     
     .team-cards{
         margin-left: auto;
-        margin-right: 0;
+        margin-right: auto;
         margin-bottom: 72px;
+    }
+
+    .team-cards:nth-child(4n) {
+        margin-right: auto;
+        margin-bottom: 0;
     }
 
     .team-desc{
@@ -1316,13 +1324,17 @@ li{
     }
       
     .customers-link{
-        padding: 16px 40px;
+        padding: 10px 20px;
     }
 
     .customers-list{
         width: calc((100% - 2 * 16px) /2);
         margin: 8px;
         margin-top: 72px;
+    }
+
+    .cust{
+        margin-bottom: 0;
     }
 
     /* Footer start */

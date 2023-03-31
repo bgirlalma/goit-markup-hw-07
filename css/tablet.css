@@ -127,9 +127,8 @@
     }
 
     .advantages-wrapper{
-        width: 100%;
         display: flex;
-       flex-wrap: wrap;
+        flex-wrap: wrap;
     }
 
     .advantages-block{
@@ -139,6 +138,12 @@
 
     .block{
         padding-right: 0;
+    }
+
+    .block-title{
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.1;
     }
 
     .block-desc{
@@ -162,6 +167,9 @@
     /* Taem start */
 
     .team{
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 768px;
         padding-top: 100px;
         padding-bottom: 100px;
     }
@@ -183,8 +191,15 @@
         margin-bottom: 72px;
     }
 
+    .cards-bottom{
+        margin-bottom: 0;
+    }
+
     /* Customers start */
     .customers-section {
+        max-width: 768px;
+        margin-left: auto;
+        margin-right: auto;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -244,4 +259,13 @@
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), 
         rgba(46, 47, 66, 0.7)), url(../images/hero-tab-2x.jpg);
     }
+}
+
+
+@media screen and (min-width: 870px) and (max-width: 1127px) {
+    .cards-bottom{
+        margin-bottom: auto;
+    }
+
+    
 }
