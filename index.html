@@ -214,13 +214,13 @@ What are we doing
 
 <ul class="cases-wrapper">
 <li class="cases-image">
-<img src="./images/computer.jpg" width="360" alt="комп`ютер">
+<img srcset="./images/monitor-dek-2x.jpg 720w, ./images/monitor.jpg 360w"  src="./images/monitor.jpg" width="360" alt="комп`ютер">
 </li>
 <li class="cases-image">
-<img src="./images/chats.jpg" width="360" alt="чат">
+<img srcset="./images/chats.jpg 360w, ./images/chats-dek-2x.jpg 720w" src="./images/chats.jpg" width="360" alt="чат">
 </li>
 <li class="cases-image">
-<img src="./images/phone.jpg" width="360" alt="телефон">
+<img srcset="./images/phone.jpg 360w, ./images/phone-dek-2x.jpg 720w" src="./images/phone.jpg" width="360" alt="телефон">
 </li>
 </ul>
 </div>
@@ -236,8 +236,12 @@ Our Team
 
 <ul class="team-wrapper">
 <li class="team-cards cards">
-
-<img class="team-image" src="./images/Mark.jpg" width="264" alt="Mark">
+    <picture>
+        <source srcset="./images/Mark.jpg 1x, ./images/mark-mobie-2x.jpg 2x" media="(max-width: 767px)">
+        <source srcset="./images/Mark.jpg 1x, ./images/mark-tab-2x.jpg 2x" media="(max-width: 1127px)">
+        <source srcset="./images/Mark.jpg 1x, ./images/mark-dek-2x.jpg 2x" media="(min-width: 1128px)">
+        <img class="team-image" src="./images/Mark.jpg" width="264" alt="Mark">
+    </picture>
 <div class="card">
 <h3 class="team-name">
 Mark Guerrero
@@ -278,7 +282,12 @@ Product Designer
 </div>
 </li>
 <li class="team-cards cards wrapper">
-<img class="team-image" src="./images/Tom.jpg" width="264" alt="Tom">
+    <picture>
+        <source srcset="./images/Tom.jpg 1x, ./images/tom-mobile-2x.jpg 2x" media="(max-width: 767px)">
+        <source srcset="./images/Tom.jpg 1x, ./images/tom-tab-2x.jpg 2x" media="(max-width: 1127px)">
+        <source srcset="./images/Tom.jpg 1x, ./images/tom-dek-2x.jpg 2x" media="(mi-width: 1128px)">
+        <img class="team-image" src="./images/Tom.jpg" width="264" alt="Tom">
+    </picture>
 <div class="card">
 <h3 class="team-name">
 Tom Ford
@@ -319,7 +328,12 @@ Frontend Developer
 </li>
 </div>
 <li class="team-cards cards">
-<img class="team-image" src="./images/Camila.jpg" width="264" alt="Camila">
+    <picture>
+        <source srcset="./images/Camila.jpg 1x, ./images/camilla-mobile-2x.jpg 2x" media="(max-width: 767px)">
+        <source srcset="./images/Camila.jpg 1x, ./images/camilla-tab-2x.jpg 2x" media="(max-width: 1127px)">
+        <source srcset="./images/Camila.jpg 1x, ./images/camila-dek-2x.jpg 2x" media="(mi-width: 1128px)">
+        <img class="team-image" src="./images/Camila.jpg" width="264" alt="Camila">
+    </picture>
 <div class="card">
 <h3 class="team-name">
 Camila Garcia
@@ -360,7 +374,12 @@ Marketing
 </li>
 </div>
 <li class="team-cards cards">
-<img class="team-image" src="./images/Daniel.jpg" width="264" alt="Daniel">
+    <picture>
+        <source srcset="./images/Daniel.jpg 1x, ./images/daniel-mobile-2x.jpg 2x" media="(max-width: 767px)">
+        <source srcset="./images/Daniel.jpg 1x, ./images/daniel-tab-2x.jpg 2x" media="(max-width: 1127px)">
+        <source srcset="./images/Daniel.jpg 1x, ./images/daniel-dek-2x.jpg 2x" media="(mi-width: 1128px)">
+        <img class="team-image" src="./images/Daniel.jpg" width="264" alt="Daniel">
+    </picture>
 <div class="card">
 <h3 class="team-name">
 Daniel Wilson
