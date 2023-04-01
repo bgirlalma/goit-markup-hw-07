@@ -898,7 +898,6 @@ li{
     margin-top: 24px;
     margin-bottom: 24px;
 }
-
 /* Modal end */
 
 /* portfolio section start */
@@ -1159,6 +1158,7 @@ li{
     .contacts{
         display: flex; 
         flex-direction: column;
+        padding-left: 0;
     }
 
     .email-item{
@@ -1177,7 +1177,7 @@ li{
     
     .contacts-active_tel{
         font-weight: 400;
-        font-size: 36px;
+        font-size: 29px;
         line-height: 1.5;  
     }
     
@@ -1404,7 +1404,55 @@ li{
         margin-bottom: 0;
         padding-left: 0;
         display: flex;
-        flex-wrap: wrap;
-        
+        flex-wrap: wrap;  
     }
+
+    /* Modal start */
+    .modal {
+        min-width: 315px;
+        padding-left: 16px;
+        padding-right: 16px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        background-color: #FCFCFC;
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 4px;
+    }
+
+    .modal-title {
+        margin-bottom: 16px;
+    }
+    
+    .label-modal span{
+        margin-top: 0;
+    }
+
+    .form-modal-svg {
+        left: 16px; 
+    }
+    
+    .checkbox-modal{
+        display: flex;
+        margin-top: 11px;
+    }
+
+    .checkbox-icon {
+        margin-right: 6px;
+    }
+
+    .modal-desc{
+        font-size: 9px;
+        margin-top: 16px;
+    }
+    
+    .privacy-policy-link{
+        font-size: 10px;
+        margin-left: 4;
+        color: rgba(77, 90, 229, 1);
+    }
+    .form-type{
+        margin: 0;
+    }  
 }

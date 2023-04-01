@@ -33,7 +33,35 @@
         margin-top: 72px;
     }
 
-    .advantages{
-        
+    /* Modal start */
+
+    .modal {
+        min-width: 392px;
+    }
+    
+    .label-modal span{
+        margin-top: 8px;
+    }
+
+    .form-modal-svg {
+        left: 16px; 
+    }
+    
+    .checkbox-modal{
+        margin-top: 16px;
+    }
+
+    .checkbox-icon {
+        margin-right: 8px;
+    }
+
+    .modal-desc{
+        font-size: 12px;
+    }
+    
+    .privacy-policy-link{
+        font-size: 12px;
+        margin-left: 6px;
+        color: rgba(77, 90, 229, 1);
     }
 }

@@ -1,7 +1,7 @@
 @media screen and (min-width: 1128px) {
     
     .container{
-       width: 100%;
+       max-width: 1158px;
     }
 
     /* Mobile none */
@@ -47,15 +47,6 @@
     }
 
     /* Header start */
-
-    .header .container{
-        max-width: 1128px;
-        display: flex;
-        padding: 24px 15px 0 15px;
-        margin-top: 0;
-        margin-bottom: 0;
-    }
-
     .header-nav-menu{
         display: flex;
         align-items: unset;
@@ -136,43 +127,37 @@
     .advantages-wrapper{
         margin-left: auto;
         margin-right: auto;
-        max-width: 1128px;
     }
 
     .cases-wrapper{
         margin-left: auto;
         margin-right:auto;
-        max-width: 1200px;
     }
 
     .team-wrapper{
         margin-left: auto;
         margin-right:auto;
-        max-width: 1200px;
     }
 
-   
-    /* Customers start */
-    .customers-section .container{
-        padding-left: 0;
-        padding-right: 0;
+    /* Customers-section */
+    .customers-section {
+        padding-top: 120px;
+        padding-bottom: 120px;
+       
     }
-
     /* Footer start */
-    .footer .container{
-        max-width: 1128px;
+    .footer{
         display: flex;
     }
 
 }
-
-.hero-section{
+    .hero-section{
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), 
     rgba(46, 47, 66, 0.7)), url(../images/hero.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-} 
+    } 
 
 @media (min-device-pixel-ratio), (min-resolution: 102dpi), (min-resolution: 2dppx) {
     .hero-section{
