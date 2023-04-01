@@ -150,6 +150,15 @@
         display: flex;
     }
 
+
+    .cards-wrapper{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .portfolio {
+        width: 100%;
+    }
+
 }
     .hero-section{
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), 

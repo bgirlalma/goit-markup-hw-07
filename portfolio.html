@@ -5,18 +5,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Goit-markup-hw-01</title>
+    <title>Web Studio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700&display=swap"
         rel="stylesheet">
-        <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/mobile.css">
+    <link rel="stylesheet" href="./css/tablet.css">
+    <link rel="stylesheet" href="./css/desktop.css"> 
 </head>
 
 <body>
-
-      <!-- Header start -->
  <!-- Header start -->
  <header class="header strip">
     <div class="container">
@@ -141,10 +142,15 @@
 <ul class="cards-wrapper">
 
 <!-- card 1 -->
-<li class="cards-menu">
-<a class="cards-link" href="">   
-    <div class="cards-overlay">
-<img class="card-img" src="./images/bankapp.jpg" alt="приложение банкинг">
+<li class="cards-menu"> 
+    <a class="cards-link" href="">
+    <div class="cards-overlay"> 
+    <picture>
+        <source srcset="./images/bankapp.jpg 1x, ./images/backapp-mob-2x.jpg 2x" media="(max-width: 767px)">
+        <source srcset="./images/bankapp.jpg 1x, ./images/bankapp-tab-2x.jpg 2x" media="(max-width: 1127px)">
+        <source srcset="./images/bankapp.jpg 1x, ./images/bankapp-dek-2x.jpg 2x" media="(min-width: 1128px)">
+        <img class="card-img" src="./images/bankapp.jpg" alt="приложение банкинг">
+    </picture> 
 <p class="overlay-desc">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>  
 </div>
 <div class="content">
@@ -160,7 +166,12 @@
 <li class="cards-menu">
 <a class="cards-link" href="">
     <div class="cards-overlay">
-<img class="card-img" src="./images/qrcode.jpg" alt="безконтактная оплата">
+    <picture>
+        <source srcset="./images/qrcode.jpg 1x, ./images/qr-mob-2x.jpg 2x" media="(max-width: 767px)">
+        <source srcset="./images/qrcode.jpg 1x, ./images/qrcode-tab-2x.jpg 2x" media="(max-width: 1127px)">
+        <source srcset="./images/qrcode.jpg 1x, ./images/qrcode-dek-2x.jpg 2x" media="(min-width: 1128px)">
+        <img class="card-img" src="./images/qrcode.jpg" alt="безконтактная оплата">
+    </picture> 
 <p class="overlay-desc">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
     </div>
 <div class="content">
@@ -175,7 +186,12 @@
 <li class="cards-menu">
 <a class="cards-link" href="">
     <div class="cards-overlay">
-<img class="card-img" src="./images/normalcy.jpg" alt="медитация">
+    <picture>
+        <source srcset="./images/normalcy.jpg 1x, ./images/normalcy-mob-2x.jpg 2x" media="(max-width: 767px)">
+        <source srcset="./images/normalcy.jpg 1x, ./images/noramalcy-tab-2x.jpg 2x" media="(max-width: 1127px)">
+        <source srcset="./images/normalcy.jpg 1x, ./images/normalcy-dek-2x.jpg 2x" media="(min-width: 1128px)">
+        <img class="card-img" src="./images/normalcy.jpg" alt="медитация">
+    </picture> 
 <p class="overlay-desc">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
     </div>
 
@@ -191,7 +207,12 @@
 <li class="cards-menu">
 <a class="cards-link" href="">
     <div class="cards-overlay">
-<img class="card-img" src="./images/auto.jpg" alt="такси">
+        <picture>
+            <source srcset="./images/driver.jpg 1x, ./images/driver-mob-2x.jpg 2x" media="(max-width: 767px)">
+            <source srcset="./images/driver.jpg 1x, ./images/driver-tab-2x.jpg 2x" media="(max-width: 1127px)">
+            <source srcset="./images/driver.jpg 1x, ./images/driver-dek-2x.jpg 2x" media="(min-width: 1128px)">
+            <img class="card-img" src="./images/driver.jpg" alt="такси">
+        </picture> 
 <p class="overlay-desc">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
     </div>
 
@@ -207,7 +228,12 @@
 <li class="cards-menu">
 <a class="cards-link" href="">
     <div class="cards-overlay">
-<img class="card-img" src="./images/splashscreen.jpg" alt="илюстрация">
+        <picture>
+            <source srcset="./images/splashscreen.jpg 1x, ./images/splashscreen-mob-2x.jpg 2x" media="(max-width: 767px)">
+            <source srcset="./images/splashscreen.jpg 1x, ./images/splashscreen-tab-2x.jpg 2x" media="(max-width: 1127px)">
+            <source srcset="./images/splashscreen.jpg 1x, ./images/splashscreen-dek-2x.jpg 2x" media="(min-width: 1128px)">
+            <img class="card-img" src="./images/splashscreen.jpg" alt="илюстрация">
+        </picture> 
 <p class="overlay-desc">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
     </div>
 
@@ -223,7 +249,12 @@
 <li class="cards-menu"> 
 <a class="cards-link" href="">
     <div class="cards-overlay">
-<img class="card-img" src="./images/music.jpg" alt="онлайн курс">
+        <picture>
+            <source srcset="./images/music.jpg 1x, ./images/music-mob-2x.jpg 2x" media="(max-width: 767px)">
+            <source srcset="./images/music.jpg 1x, ./images/musical-tab-2x.jpg 2x" media="(max-width: 1127px)">
+            <source srcset="./images/music.jpg 1x, ./images/musical-tab-2x.jpg 2x" media="(min-width: 1128px)">
+            <img class="card-img" src="./images/music.jpg" alt="онлайн курс">
+        </picture> 
 <p class="overlay-desc">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
     </div>
 
@@ -239,7 +270,12 @@
 <li class="cards-menu">
 <a class="cards-link" href="">
     <div class="cards-overlay">
-<img class="card-img" src="./images/model.jpg" alt="инстаграм">
+        <picture>
+            <source srcset="./images/model.jpg 1x, ./images/model-mob-2x.jpg 2x" media="(max-width: 767px)">
+            <source srcset="./images/model.jpg 1x, ./images/model-tab-2x.jpg 2x" media="(max-width: 1127px)">
+            <source srcset="./images/model.jpg 1x, ./images/model-dek-2x.jpg 2x" media="(min-width: 1128px)">
+            <img class="card-img" src="./images/model.jpg" alt="инстаграм">
+        </picture> 
 <p class="overlay-desc">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
     </div>
 
@@ -255,7 +291,12 @@
 <li class="cards-menu">
 <a class="cards-link" href="">
     <div class="cards-overlay">
-<img class="card-img" src="./images/food.jpg" alt="продукты">
+        <picture>
+            <source srcset="./images/shop.jpg 1x, ./images/shop-mob-2x.jpg 2x" media="(max-width: 767px)">
+            <source srcset="./images/shop.jpg 1x, ./images/shop-tab-2x.jpg 2x" media="(max-width: 1127px)">
+            <source srcset="./images/shop.jpg 1x, ./images/shop-dek-2x.jpg 2x" media="(min-width: 1128px)">
+            <img class="card-img" src="./images/food.jpg" alt="продукты">
+        </picture> 
 <p class="overlay-desc">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
     </div>
 
@@ -271,7 +312,12 @@
 <li class="cards-menu">   
 <a class="cards-link" href="">
     <div class="cards-overlay">
-<img class="card-img" src="./images/coffee.jpg" alt="свежий кофе">
+        <picture>
+            <source srcset="./images/coffee.jpg 1x, ./images/coffe-mob-2x.jpg 2x" media="(max-width: 767px)">
+            <source srcset="./images/coffee.jpg 1x, ./images/coffe-tab-2x.jpg 2x" media="(max-width: 1127px)">
+            <source srcset="./images/coffee.jpg 1x, ./images/coffe-dek-2x.jpg 2x" media="(min-width: 1128px)">
+            <img class="card-img" src="./images/coffee.jpg" alt="свежий кофе">
+        </picture> 
 <p class="overlay-desc">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
     </div>
 

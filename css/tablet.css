@@ -242,6 +242,16 @@
         margin-left: 0;
     }
 
+    /* Portfolio start */
+    .cards-wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+
+    .cards-menu{
+        width: calc((100% - 2 * 12px) /2);  
+    }
 }
 
 .hero-section{
