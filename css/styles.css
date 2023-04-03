@@ -793,7 +793,6 @@ li{
    
 }
 
-
 .textarea-form {
     display: block;
     width: 100%;
@@ -919,10 +918,6 @@ li{
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.item-type{
-
 }
 
 .portfolio-button{

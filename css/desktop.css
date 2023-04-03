@@ -1,4 +1,4 @@
-@media screen and (min-width: 1128px) {
+@media screen and (min-width: 1128px) and (max-width: 1440px) {
     
     .container{
        max-width: 1158px;
@@ -151,15 +151,17 @@
     }
 
 
-    .cards-wrapper{
-        margin-left: auto;
-        margin-right: auto;
+    /* Portfolio start */
+    .portfolio{
+        padding-top: 70px;
     }
-    .portfolio {
-        width: 100%;
+
+    .cards-menu{
+        width: calc((100% - 48px) / 3);  
     }
 
 }
+
     .hero-section{
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), 
     rgba(46, 47, 66, 0.7)), url(../images/hero.jpg);
